@@ -21,7 +21,7 @@ import android.widget.TextView;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
-
+// this is test
 public class MainActivity extends AppCompatActivity {
 
     Button button2;
