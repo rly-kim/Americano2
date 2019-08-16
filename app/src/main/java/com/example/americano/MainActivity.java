@@ -21,12 +21,10 @@ import android.widget.TextView;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
-// this is test
-// test 2
+
 public class MainActivity extends AppCompatActivity {
 
     Button button2;
-    Button button3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +37,16 @@ public class MainActivity extends AppCompatActivity {
                 String name = button2.getText().toString();
                 Intent intent = new Intent(getApplicationContext(), StoreActivity.class);
                 intent.putExtra("nameText", name);
+                startActivity(intent);
+            }
+        });
+
+        Button favoriteButton = (Button) findViewById(R.id.favoriteButton);
+
+        favoriteButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), FavoriteActivity.class);
                 startActivity(intent);
             }
         });
