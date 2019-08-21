@@ -24,7 +24,7 @@ public class StoreActivity extends AppCompatActivity {
         setContentView(R.layout.store_layout);
         textview = (TextView) findViewById(R.id.textview);
         Intent intent = getIntent();
-        textview.setText(intent.getStringExtra("nameText").toString());
+        //textview.setText(intent.getStringExtra("nameText").toString());      필요 없는 부분이면 지움.
 
         ImageButton callBut = (ImageButton) findViewById(R.id.callBut);
         callBut.setOnClickListener(new View.OnClickListener() {

@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         button2 = (Button) findViewById(R.id.Button2);
 
+
         button2.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 String name = button2.getText().toString();
